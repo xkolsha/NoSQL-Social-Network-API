@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 //add chalk for colorful console.log
-const chalk = require("chalk");
+import chalk from "chalk";
 
 const connectDB = async () => {
   try {
@@ -18,4 +18,4 @@ const connectDB = async () => {
   }
 };
 
-module.exports = connectDB;
+export default connectDB;
