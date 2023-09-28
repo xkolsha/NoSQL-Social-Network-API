@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-//add chalk for colorful console.log
 import chalk from "chalk";
 
 const connectDB = async () => {
@@ -18,4 +17,6 @@ const connectDB = async () => {
   }
 };
 
-export default connectDB;
+const db = mongoose.connection;
+
+export { db, connectDB };

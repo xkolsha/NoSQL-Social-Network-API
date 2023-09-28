@@ -1,5 +1,5 @@
 // Add a reaction to a thought
-import { Thought } from "../models";
+import Thought from "../models/Thought.js";
 
 const thoughtController = {
   // Get all thoughts
