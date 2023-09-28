@@ -3,13 +3,15 @@ import chalk from "chalk";
 import { User, Thought } from "../models/index.js";
 import { userData, thoughtData } from "./data.js";
 
+import dotenv from "dotenv";
+dotenv.config();
+
 // Connect to MongoDB using mongoose directly to make sure connection is established in the seeding script.
 const connectDB = async () => {
   try {
     await mongoose.connect(process.env.DB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useCreateIndex: true,
     });
     console.log(chalk.green("MongoDB Connected..."));
   } catch (err) {
