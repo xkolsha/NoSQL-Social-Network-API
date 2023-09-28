@@ -8,6 +8,7 @@ const thoughtController = {
       const thoughts = await Thought.find({});
       res.json(thoughts);
     } catch (err) {
+      console.error("Error fetching all thoughts:", err.message);
       res.status(500).json(err);
     }
   },
