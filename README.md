@@ -35,6 +35,8 @@ API for a social network web application where users can share their thoughts, r
 
 ## Mock Up
 
+![Mock up of the website](/Screenshot%202023-10-09%20012624.png)
+
 ## Deployment
 
 - **GitHub Repo**: [NoSQL-Social-Network-API Repository](https://github.com/xkolsha/NoSQL-Social-Network-API)
